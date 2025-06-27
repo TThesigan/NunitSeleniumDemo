@@ -25,5 +25,12 @@ namespace virtusaprep.Pages
             passwordField.SendKeys(password);
             loginButton.Click();
         }
+
+        public string CheckUser() 
+        {
+            WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10));
+            var userName = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//p[@class='oxd-userdropdown-name']")));
+            return userName.Text;
+        }
     }
 }

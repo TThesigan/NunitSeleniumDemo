@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("virtusaprep")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d9dc064caf11c046fd4d5ffad81bb5d5e1da742")]
 [assembly: System.Reflection.AssemblyProductAttribute("virtusaprep")]
 [assembly: System.Reflection.AssemblyTitleAttribute("virtusaprep")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

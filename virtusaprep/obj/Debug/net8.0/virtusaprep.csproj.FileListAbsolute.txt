@@ -107,3 +107,4 @@ C:\Users\tthes\source\repos\interviewdemo\virtusaprep\obj\Debug\net8.0\virtusapr
 C:\Users\tthes\source\repos\interviewdemo\virtusaprep\obj\Debug\net8.0\ref\virtusaprep.dll
 C:\Users\tthes\source\repos\interviewdemo\virtusaprep\bin\Debug\net8.0\SeleniumExtras.WaitHelpers.dll
 C:\Users\tthes\source\repos\interviewdemo\virtusaprep\bin\Debug\net8.0\TestData\LoginCredential.json
+C:\Users\tthes\source\repos\interviewdemo\virtusaprep\obj\Debug\net8.0\virtusaprep.sourcelink.json

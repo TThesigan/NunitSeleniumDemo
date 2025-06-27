@@ -15,6 +15,7 @@ namespace virtusaprep.Tests
             loginPage.Login(loginData.Username, loginData.Password);
 
             Assert.IsTrue(Driver.Url.Contains("dashboard"), "Expected to land on dashboard.");
+            Assert.IsTrue(loginPage.CheckUser().Contains("John Davies"), "Expected user");
         }
 
         [Test]
