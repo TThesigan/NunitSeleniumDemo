@@ -1,0 +1,29 @@
+name: CI - VirtusaPrep NUnit Tests
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-and-test:
+    runs-on: windows-latest
+
+    steps:
+      - name: 🛎️ Checkout Code
+        uses: actions/checkout@v3
+
+      - name: ⚙️ Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: 📦 Restore NuGet
+        run: dotnet restore virtusaprep/virtusaprep.Tests/virtusaprep.Tests.csproj
+
+      - name: 🏗️ Build Test Project
+        run: dotnet build virtusaprep/virtusaprep.Tests/virtusaprep.Tests.csproj --configuration Release
+
+      - name: 🧪 Run Tests
+        run: dotnet test virtusaprep/virtusaprep.Tests/virtusaprep.Tests.csproj --no-build --configuration Release --logger "console;verbosity=detailed"
